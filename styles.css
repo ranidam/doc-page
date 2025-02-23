@@ -1,0 +1,191 @@
+body {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f8fa;
+    color: #333;
+    min-height: 100vh;
+    line-height: 1.5;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#navbar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Add scrollbar */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1;
+    border-bottom-right-radius: 10px;
+    border-bottom-width: 2px;
+    border-bottom-color: #020518;
+    border-bottom-style: solid;
+}
+
+#navbar header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    border: #020518;
+}
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: block;
+    cursor: pointer;
+    line-height: 25px;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #020518;
+    padding-top: 10px;
+    transition: 0.3s;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+#main-doc {
+    margin-left: 240px; /* Create a gap between navbar and main content */
+    padding: 20px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.main-section header {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.code-examples {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.code-example {
+    flex: 1;
+    margin: 10px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+code {
+    color: #4d4e53;
+    font-size: 0.96em;
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.6;
+    background-color: #dbdce7;
+    margin: 20px 0;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 45px;
+    flex-grow: 1; /* Ensure code blocks take up the remaining space */
+}
+
+section article {
+    color: #4d4e53;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+    #navbar {
+        width: 180px;
+    }
+    #main-doc {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        background-color: #444;
+    }
+    #main-doc {
+        margin-left: 0;
+        padding: 10px;
+    }
+    .nav-link {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+    #main-doc {
+        margin-left: 0;
+        padding: 10px;
+    }
+    header {
+        font-size: 1.5em;
+    }
+    .main-section header {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+/* Add a smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
