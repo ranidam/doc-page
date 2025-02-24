@@ -1,1 +1,1 @@
-# doc-page
+This is a Technical Documentation Page. It provides a structured and informative resource for showcasing projects, technical guides, and development insights. This page reflects my expertise in web development and serves as a valuable reference for learning and implementation.
