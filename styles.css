@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column; /* Adjust for mobile responsiveness */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
@@ -142,12 +143,16 @@ li {
 }
 
 @media (max-width: 768px) {
+    body {
+        flex-direction: column-reverse; /* Adjust body layout for smaller screens */
+    }
     #navbar {
         position: relative;
         width: 100%;
         height: auto;
         box-shadow: none;
         background-color: #444;
+        padding: 10px 0;
     }
     #main-doc {
         margin-left: 0;
@@ -184,8 +189,3 @@ li {
 html {
     scroll-behavior: smooth;
 }
-
-
-
-
-
